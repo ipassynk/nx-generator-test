@@ -18,6 +18,8 @@ export default async function (host: Tree, schema: any) {
     {
       name: schema.name,
       nameTitle: names(schema.name).className,
+      // https://github.com/nrwl/nx/issues/11332
+      tmpl: ""
     }
   );
 
